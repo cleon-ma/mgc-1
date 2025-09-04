@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Human Impact on the Environment</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa6b2;
+      --accent:#6ee7b7;
+      --accent-2:#60a5fa;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color-scheme: dark;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#071029 0%, #071a2b 60%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      font-size:16px;
+      padding:32px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:980px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:20px;
+      padding:28px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.7), inset 0 1px 0 rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+    .logo{
+      width:72px;
+      height:72px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:#022;
+      box-shadow: 0 6px 18px rgba(10,140,110,0.12);
+      flex:0 0 72px;
+    }
+    h1{
+      margin:0;
+      font-size:1.6rem;
+      letter-spacing:-0.02em;
+    }
+    p.lead{
+      margin:6px 0 0 0;
+      color:var(--muted);
+      font-size:0.98rem;
+    }
+
+    main{display:grid; grid-template-columns: 1fr 340px; gap:20px; margin-top:16px;}
+    @media (max-width:920px){ main{grid-template-columns:1fr;} .aside{order:2;} }
+
+    .card{
+      background:var(--card);
+      padding:18px;
+      border-radius:var(--radius);
+      border: 1px solid rgba(255,255,255,0.02);
+    }
+
+    section h2{
+      margin:0 0 10px 0;
+      font-size:1.05rem;
+    }
+    .muted{color:var(--muted); font-size:0.95rem;}
+    ul{margin:10px 0 14px 20px;}
+    li{margin:8px 0;}
+
+    .stat-grid{
+      display:grid;
+      grid-template-columns: repeat(3,1fr);
+      gap:10px;
+      margin-top:8px;
+    }
+    .stat{
+      background:var(--glass);
+      padding:12px;
+      border-radius:10px;
+      text-align:center;
+    }
+    .stat strong{display:block; font-size:1.05rem;}
+    .cta{
+      display:inline-block;
+      margin-top:12px;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#022;
+      padding:10px 14px;
+      border-radius:12px;
+      font-weight:700;
+      text-decoration:none;
+    }
+
+    footer{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:0.9rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+    }
+
+    /* simple decorative SVG container */
+    .hero{
+      width:100%;
+      height:120px;
+      border-radius:12px;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:12px;
+      background: linear-gradient(180deg, rgba(96,165,250,0.06), rgba(110,231,183,0.03));
+      border: 1px solid rgba(255,255,255,0.02);
+    }
+
+    .small{
+      font-size:0.92rem;
+      color:var(--muted);
+    }
+
+    .aside h3{margin-top:0;}
+    .actions a{display:block; margin:8px 0; text-decoration:none; color:var(--accent-2);}
+    .quote{
+      font-style:italic;
+      color:var(--muted);
+      border-left:3px solid rgba(255,255,255,0.03);
+      padding-left:10px;
+      margin:10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div class="logo" aria-hidden="true">E•AR</div>
+      <div>
+        <h1>Human Impact on the Environment</h1>
+        <p class="lead">A clear, simple look at how people change the planet and what can be done about it.</p>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <div class="hero" aria-hidden="true">
+          <!-- lightweight SVG illustration (trees + factory) -->
+          <svg width="92%" height="92%" viewBox="0 0 800 200" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of nature and human activity">
+            <rect width="100%" height="100%" fill="transparent"/>
+            <!-- sun -->
+            <circle cx="720" cy="40" r="28" fill="rgba(255,230,120,0.9)"/>
+            <!-- trees -->
+            <g fill="#6ee7b7">
+              <ellipse cx="80" cy="140" rx="28" ry="36"/>
+              <rect x="74" y="140" width="12" height="28" fill="#7c5a3a"/>
+              <ellipse cx="150" cy="130" rx="36" ry="44"/>
+              <rect x="144" y="160" width="12" height="24" fill="#7c5a3a"/>
+            </g>
+            <!-- river -->
+            <path d="M0 170 C150 130, 350 200, 800 140 L800 200 L0 200 Z" fill="rgba(96,165,250,0.12)"/>
+            <!-- factory -->
+            <g transform="translate(400,70)" fill="#cbd5e1">
+              <rect x="0" y="30" width="160" height="70" rx="4"/>
+              <rect x="10" y="0" width="40" height="60"/>
+              <rect x="60" y="10" width="30" height="50"/>
+              <rect x="100" y="5" width="40" height="55"/>
+              <rect x="20" y="-24" width="18" height="24" fill="#94a3b8"/>
+              <path d="M18 -24 L8 -56 L26 -56 Z" fill="#94a3b8"/>
+            </g>
+            <!-- faint smoke -->
+            <g fill="rgba(255,255,255,0.07)">
+              <ellipse cx="440" cy="18" rx="20" ry="10"/>
+              <ellipse cx="460" cy="6" rx="28" ry="12"/>
+              <ellipse cx="480" cy="-6" rx="34" ry="14"/>
+            </g>
+          </svg>
+        </div>
+
+        <article class="card" aria-labelledby="impact">
+          <h2 id="impact">How humans affect the environment</h2>
+          <p class="small muted">Human activities change land, air, water, and climate. Some changes are local, some global. Below are main ways people affect the natural world:</p>
+
+          <h3 style="margin-top:14px;">Primary causes</h3>
+          <ul>
+            <li><strong>Resource use:</strong> extracting minerals, cutting forests, and intensive farming change landscapes and reduce biodiversity.</li>
+            <li><strong>Pollution:</strong> air, water, and soil pollution from factories, vehicles, farms, and waste cause health and ecosystem harm.</li>
+            <li><strong>Greenhouse gases:</strong> burning fossil fuels and some farming practices trap heat and drive climate change.</li>
+            <li><strong>Urban growth:</strong> cities, roads, and infrastructure fragment habitats and increase energy and water demand.</li>
+            <li><strong>Overconsumption:</strong> high demand for goods and food increases waste and pressure on natural resources.</li>
+          </ul>
+
+          <h3>Effects on nature and people</h3>
+          <ul>
+            <li><strong>Biodiversity loss:</strong> species disappear when habitats are removed or polluted.</li>
+            <li><strong>Health problems:</strong> air pollution and contaminated water cause illness and lower life quality.</li>
+            <li><strong>Changing climate:</strong> more extreme weather, rising seas, and shifting seasons affect food, homes, and economies.</li>
+            <li><strong>Soil and water decline:</strong> erosion, desertification, and contamination reduce land productivity.</li>
+            <li><strong>Economic impacts:</strong> environmental damage raises costs for recovery, health care, and food production.</li>
+          </ul>
+
+          <div class="quote small">"We do not inherit the earth from our ancestors; we borrow it from our children." — (often cited proverb)</div>
+
+          <h3>Simple actions that help</h3>
+          <ul>
+            <li><strong>Use less, waste less:</strong> reduce single-use items, repair things, and choose durable goods.</li>
+            <li><strong>Save energy:</strong> switch to efficient lighting and appliances, insulate homes, and prefer public transit or cycling.</li>
+            <li><strong>Eat smarter:</strong> reduce food waste, try more plant-based meals, and support sustainable farming.</li>
+            <li><strong>Protect nature:</strong> support habitat restoration, tree planting, and local conservation groups.</li>
+            <li><strong>Vote and learn:</strong> back smart policies and stay informed; community choices shape larger systems.</li>
+          </ul>
+        </article>
+
+        <article class="card" aria-labelledby="howto" style="margin-top:14px;">
+          <h2 id="howto">How you can act — practical steps</h2>
+          <p class="muted small">Every action adds up. Here are practical steps individuals, schools, and small groups can take today.</p>
+          <ol>
+            <li><strong>Audit your routine:</strong> check energy, water use, and waste for quick wins (switch bulbs, fix leaks).</li>
+            <li><strong>Choose low-impact travel:</strong> walk, bike, carpool, or use public transport more often.</li>
+            <li><strong>Buy thoughtful:</strong> choose fewer, better-made items and secondhand when possible.</li>
+            <li><strong>Support green spaces:</strong> plant native species, avoid pesticides, and help local cleanups.</li>
+            <li><strong>Share knowledge:</strong> teach friends and family simple ways to reduce impact.</li>
+          </ol>
+          <p class="small muted">Small habits turn into community norms. Communities that work together can shape industry and policy.</p>
+        </article>
+      </div>
+
+      <aside class="aside">
+        <div class="card">
+          <h3>Quick facts</h3>
+          <p class="muted small">Short reminders without numbers — reliable, timeless takeaways.</p>
+          <div class="stat-grid" aria-hidden="false">
+            <div class="stat">
+              <strong>Interconnected</strong>
+              <span class="small muted">Changes in one system affect others.</span>
+            </div>
+            <div class="stat">
+              <strong>Recoverable</strong>
+              <span class="small muted">Many damaged places can improve with time and care.</span>
+            </div>
+            <div class="stat">
+              <strong>Collective</strong>
+              <span class="small muted">Individual and policy choices both matter.</span>
+            </div>
+          </div>
+
+          <h3 style="margin-top:12px;">Resources</h3>
+          <p class="small muted">Start local: find community gardens, recycling centers, or conservation groups near you.</p>
+          <div class="actions">
+            <a href="#" onclick="alert('Search locally for environmental groups in your area.')" role="button" aria-label="Find local groups">Find local groups</a>
+            <a href="#" onclick="alert('Start by checking your municipality website for recycling and energy-saving programs.')" role="button" aria-label="Local programs">Local programs</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px;">
+          <h3>Takeaway</h3>
+          <p class="small muted">Human choices shape the environment. Thoughtful action reduces harm, restores nature, and builds a fairer future.</p>
+          <a class="cta" href="#" onclick="alert('Action: tell one friend one thing you will change today!')">Make one change today</a>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="small muted">Built for learning — clear language, practical steps.</div>
+      <div class="small muted">No external links • Print-friendly</div>
+    </footer>
+  </div>
+
+  <!-- Minimal script only for demo interactions; not required -->
+  <script>
+    // make sure keyboard users can activate the call-to-action links
+    document.querySelectorAll('.actions a, .cta').forEach(el=>{
+      el.addEventListener('keydown', e=>{
+        if(e.key === 'Enter' || e.key === ' ') el.click();
+      });
+    });
+  </script>
+</body>
+</html>
